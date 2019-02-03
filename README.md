@@ -34,7 +34,7 @@ An iPad is characterized by:
 - The price
 
 UI requirements:
-Please make your choice:
+- Please make your choice:
 - 1 - Show the entire Apple catalogue\n
 - 2 – Add a new iPhone
 - 3 – Add a new iPad
@@ -44,11 +44,11 @@ Please make your choice:
 - 7 – Stop the program
 
 Catalogue display requirements:
-All products are shown on screen in the following format:
-Apple iPhone 7 with 32GB of memory
-with an A10 processor and 4.7 inch screen
-700 euros
-Apple iPad Air 2 with 64GB of memory
-with an A8 processor and 9.7 inch screen
-having WiFi and 4G technology
-400 euros
+
+- Apple iPhone 7 with 32GB of memory
+- with an A10 processor and 4.7 inch screen
+- 700 euros
+- Apple iPad Air 2 with 64GB of memory
+- with an A8 processor and 9.7 inch screen
+- having WiFi and 4G technology
+- 400 euros

@@ -1,6 +1,5 @@
 # Java-Catalogue-Application
 Application has been made following the requirements below:
-Design and implement a program that:
 - Reads in the file apple.txt
 - Output the entire catalogue to screen
 - Sort the entire catalogue according to type (so first all iPhones, then all iPads)

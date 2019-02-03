@@ -35,7 +35,7 @@ An iPad is characterized by:
 
 UI requirements:
 Please make your choice:
-1 - Show the entire Apple catalogue
+1 - Show the entire Apple catalogue\n
 2 – Add a new iPhone
 3 – Add a new iPad
 4 - Show the entire Apple catalogue sorted by product

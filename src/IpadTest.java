@@ -1,7 +1,6 @@
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 class IpadTest {
 
@@ -10,25 +9,25 @@ class IpadTest {
 	private Ipad same_as_test = new Ipad("IPAD AIR 2" , "9.7", "A8", true, "SILVER", "64GB",  400);
 	
 	@Test
-	void testStringOriginal() {
+	public void testStringOriginal() {
 		assertEquals(test.stringOriginal(), "IPAD AIR 2, 9.7, A8, TRUE, SILVER, 64GB, 400\n");
 	}
 
 	@Test
-	void testEqualsObject() {
+	public void testEqualsObject() {
 		assertEquals(test, same_as_test);
 	}
 	@Test
-	void testNotEqualsObject() {
+	public void testNotEqualsObject() {
 		assertNotEquals(test, test2);
 	}
 	@Test
-	void testNullObject() {
+	public void testNullObject() {
 		assertNotEquals(test, null);
 	}
 
 	@Test
-	void testToString() {
+	public void testToString() {
 	     assertEquals(test.toString(), "Apple IPAD AIR 2 with 64GB of memory\n" + 
 	     		"     with an A8 processor and 9.7 inch screen\n" + 
 	     		"     having WiFi and 4G technology\n" + 
@@ -36,7 +35,7 @@ class IpadTest {
 	}
 
 	@Test
-	void testGetWifi() {
+	public void testGetWifi() {
 		assertEquals(test.getWifi(), "TRUE");
 	}
 

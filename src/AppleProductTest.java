@@ -1,13 +1,12 @@
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.util.Scanner;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
-
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 class AppleProductTest {
-	
+
 	private final String model = "IPHONE SE";
 	private final String screen = "4";
 	private final String processor = "A9";
@@ -23,8 +22,8 @@ class AppleProductTest {
 	
 
 	@Test
-	void testRead() {
-		
+	public void testRead() {
+
 		String file = model + ", " + screen + ", " + processor + ", " + modem + ", " + color + ", " + memory + ", " + touchTechnology + ", " + price + "\n";
 		Scanner input = new Scanner(file);
 		
@@ -34,16 +33,16 @@ class AppleProductTest {
 
 
 	@Test
-	void testEqualsObject() {
+	public void testEqualsObject() {
 		assertEquals(test, same_as_test);
 	}
 	@Test
-	void testNotEqualsObject() {
+	public void testNotEqualsObject() {
 		assertNotEquals(test, test2);
 	}
 	
 	@Test
-	void testNullObject() {
+	public void testNullObject() {
 		assertNotEquals(test, null);
 	}
 

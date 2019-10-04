@@ -7,11 +7,15 @@ multithreading and basic unit testing with JUnit. This is a practice project I'v
 2. Download and Install [IntelliJ]() integrated development environment.
 3. Clone down or download the project as a zip from my repository.
 4. Open the project in IntelliJ and and assign the Java SDK.  
-![Sources Root](screenshots/SDK.jpg)
+
+![Sources Root](screenshots/SDK.jpg)  
+
 5. Mark the main folder as "Sources Root"" and the test folder as "Test Sources Root"
-![Sources Root](screenshots/root.jpg)
+![Sources Root](screenshots/root.jpg)  
+
 6. Specify the Project Compiler Output to be C:\Your Path\Java-Catalogue-Application\out
-![Sources Root](screenshots/output.jpg)
+![Sources Root](screenshots/output.jpg)  
+
 7. Run the application by pressing the "Play" button in src/main/application.class file
 ## Requirements
 - Reads in the file apple.txt

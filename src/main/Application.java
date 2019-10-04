@@ -10,9 +10,8 @@ public class Application {
 	public static void main(String[] args) {
 		Scanner inputFile = null;
 		try {
-			inputFile = new Scanner(new File("apple.txt"));
+			inputFile = new Scanner(new File("ExtendedProductList.txt"));
 		} catch (FileNotFoundException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 		Scanner inputScanner = new Scanner(System.in);
@@ -41,15 +40,15 @@ public class Application {
 				}
 			
 			else if((input == 2) || (input == 3)) {
-				System.out.println("Please enter the model:");
-				String model = inputScanner.nextLine();
-				System.out.println("Please enter the size of the screen in inches:");
+				System.out.println("Please enter the model(e.g. Iphone X):");
+				String model = inputScanner.nextLine().toUpperCase();
+				System.out.println("Please enter the size of the screen in inches(e.g. 5.3):");
 				String screenSize = inputScanner.nextLine();
-				System.out.println("Please enter the name of the processor:");
+				System.out.println("Please enter the name of the processor(e.g. I9):");
 				String processor = inputScanner.nextLine();
 				System.out.println("Please enter the color of the device:");
-				String color = inputScanner.nextLine();
-				System.out.println("Please enter the amount of memory the device has:");
+				String color = inputScanner.nextLine().toUpperCase();
+				System.out.println("Please enter the amount of memory the device has(e.g. 32GB):");
 				String memory = inputScanner.nextLine();
 				System.out.println("Please enter the price:");
 				int price = Integer.parseInt(inputScanner.nextLine());
@@ -60,12 +59,12 @@ public class Application {
 					System.out.println("What is the type of modem(GSM or CDMA)?");
 					String modem = inputScanner.nextLine();
 					
-					System.out.println("Does the Iphone have 3D touch technology(TRUE/FALSE)?");
+					System.out.println("Does the Iphone have 3D touch technology(True/False)?");
 					String touch = inputScanner.nextLine();
 					
 					boolean touchd = Boolean.parseBoolean(touch);
 					
-					AppleProduct temp = new Iphone(model, screenSize, processor, modem, memory, color, touchd, price);
+					AppleProduct temp = new Iphone(model, screenSize, processor, modem, color, memory, touchd, price);
 					scannedCatalog.addProduct(temp);
 					
 					
@@ -97,16 +96,11 @@ public class Application {
 						String product = temp.stringOriginal();
 						writer.write(product);
 					}
-					writer.close();
-					
-					} catch (FileNotFoundException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					} catch (IOException e) {
-						// TODO Auto-generated catch block
+
+				} catch (IOException e) {
 						e.printStackTrace();
 					}
-			
+
 				System.out.println("Writing to file has been completed successfully under the name ExtendedProductList");
 			}
 			else if (input > 7){

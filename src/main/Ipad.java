@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Ipad extends AppleProduct{
 	private boolean wifi;
 	
@@ -12,21 +10,10 @@ public class Ipad extends AppleProduct{
 	 * @param memory
 	 * @param price
 	 */
-	public Ipad(String model, String screen, String processor,boolean wifi, String color, String memory, int price) {
+	Ipad(String model, String screen, String processor, boolean wifi, String color, String memory, int price) {
 		super(model, screen, processor, color, memory, price);
 		this.wifi = wifi;
 	}
-	
-	public static void main(String[] args) {
-//		Ipad test = new Ipad("Ipad Air 2", "4.7", "A10", "false", "Jet Black", "32GB", "700");
-//		System.out.println(test);
-		
-		
-		Scanner input = new Scanner(System.in);
-		System.out.println(read(input).stringOriginal());
-		System.out.println(read(input).toString());
-	}
-
 
 	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
@@ -48,7 +35,7 @@ public class Ipad extends AppleProduct{
 	 * @param wifi
 	 * @return
 	 */
-	public static String getInternet(boolean wifi) {
+	private static String getInternet(boolean wifi) {
 		String wifid = Boolean.toString(wifi);
 		String internet = "";
 		if(wifid.equals("true")) {
@@ -63,9 +50,8 @@ public class Ipad extends AppleProduct{
 	/**
 	 * @return
 	 */
-	public String getWifi() {
-		String wifid = Boolean.toString(wifi).toUpperCase();
-		return wifid;
+	String getWifi() {
+		return Boolean.toString(wifi).toUpperCase();
 	}
 	
 	/* (non-Javadoc)
@@ -80,9 +66,6 @@ public class Ipad extends AppleProduct{
 		if (getClass() != obj.getClass())
 			return false;
 		Ipad other = (Ipad) obj;
-		if (wifi != other.wifi)
-			return false;
-		return true;
+		return wifi == other.wifi;
 	}
-	
 }

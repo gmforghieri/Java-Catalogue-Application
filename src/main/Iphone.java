@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Iphone extends AppleProduct {
 	private String modem;
 	private boolean touchTechnology;
@@ -19,16 +17,7 @@ public class Iphone extends AppleProduct {
 		this.modem = modem;
 		this.touchTechnology = touchTechnology;
 	}
-	public static void main(String[] args) {
-//		Iphone test = new Iphone("Iphone 7", "4.7", "A10", "GSM", "Jet Black", "32GB", "true", "700");
-//		System.out.println(test);
-		
-		Scanner input = new Scanner(System.in);
-		System.out.println(read(input).stringOriginal());
-		
-	}
-	
-	
+
 	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
@@ -63,15 +52,13 @@ public class Iphone extends AppleProduct {
 				return false;
 		} else if (!modem.equals(other.modem))
 			return false;
-		if (touchTechnology != other.touchTechnology)
-			return false;
-		return true;
+		return touchTechnology == other.touchTechnology;
 	}
 	
 	/**
 	 * @return
 	 */
-	public String getModem() {
+	String getModem() {
 		return modem.toUpperCase();
 	}
 
@@ -79,9 +66,8 @@ public class Iphone extends AppleProduct {
 	/**
 	 * @return
 	 */
-	public String getTouchTechnology() {
-		String touch = Boolean.toString(touchTechnology).toUpperCase();
-		return touch;
+	private String getTouchTechnology() {
+		return Boolean.toString(touchTechnology).toUpperCase();
 	}
 
 

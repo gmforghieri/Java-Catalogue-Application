@@ -7,28 +7,27 @@ import java.util.Scanner;
  *
  */
 public class AppleCatalog {
-	List<AppleProduct> catalog;
+	private List<AppleProduct> catalog;
 	
 	/**
 	 * 
 	 */
-	public AppleCatalog() {
+	private AppleCatalog() {
 		this.catalog = new ArrayList<AppleProduct>();
 	}
 	
 	/**
-	 * Add
-	 * @param appleproduct
+	 * @param appleproduct to be added
 	 */
-	public void addProduct(AppleProduct appleproduct) {
+	void addProduct(AppleProduct appleproduct) {
 		catalog.add(appleproduct);
 	}
 	
 	/**
-	 * @param file
-	 * @return
+	 * @param input is a Scanner object
+	 * @return an AppleCatalog
 	 */
-	public static AppleCatalog read(Scanner input) {
+	static AppleCatalog read(Scanner input) {
 		AppleCatalog scannedCatalog = new AppleCatalog();
 		
 			while(input.hasNextLine()) {
@@ -48,9 +47,9 @@ public class AppleCatalog {
 	}
 	
 	/**
-	 * @return
+	 * @return a list of Apple products
 	 */
-	public List<AppleProduct> getCatalog() {
+	List<AppleProduct> getCatalog() {
 		return catalog;
 	}
 

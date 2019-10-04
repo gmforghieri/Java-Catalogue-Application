@@ -16,7 +16,7 @@ public abstract class AppleProduct {
 	 * @param memory
 	 * @param price
 	 */
-	public AppleProduct(String model, String screen, String processor, String color, String memory, int price) {
+	AppleProduct(String model, String screen, String processor, String color, String memory, int price) {
 		this.model = model;
 		this.screen = screen;
 		this.processor = processor;
@@ -25,18 +25,11 @@ public abstract class AppleProduct {
 		this.price = price;
 	}
 
-	public static void main(String[] args) {
-
-		Scanner input = new Scanner(System.in);
-		System.out.println(read(input).stringOriginal());
-
-	}
-
 	/**
-	 * @param sc
-	 * @return
+	 * @param sc scanner input object
+	 * @return an apple product such as an Ipad or Iphone
 	 */
-	public static AppleProduct read(Scanner sc) {
+	static AppleProduct read(Scanner sc) {
 		String input = sc.nextLine();
 
 		String[] whole = input.split(", ");
@@ -62,20 +55,18 @@ public abstract class AppleProduct {
 			touchTechnology = whole[6];
 			boolean touch = Boolean.parseBoolean(touchTechnology);
 			price = Integer.parseInt(whole[7]);
-			AppleProduct scannedAppleProduct = new Iphone(model, screenSize, processor, modem, color, memory,
+			return new Iphone(model, screenSize, processor, modem, color, memory,
 					touch, price);
-			return scannedAppleProduct;
 		} else {
 			price = Integer.parseInt(whole[6]);
 			boolean wifi = Boolean.parseBoolean(internet);
-			AppleProduct scannedAppleProduct = new Ipad(model, screenSize, processor, wifi, color, memory, price);
-			return scannedAppleProduct;
+			return new Ipad(model, screenSize, processor, wifi, color, memory, price);
 		}
 
 	}
 
 	/**
-	 * @return
+	 * @return string representation from the input file
 	 */
 	public String stringOriginal() {
 		return "" + getModel() + getMemory() + getProcessor() + getScreen() + getPrice();
@@ -113,11 +104,8 @@ public abstract class AppleProduct {
 		} else if (!processor.equals(other.processor))
 			return false;
 		if (screen == null) {
-			if (other.screen != null)
-				return false;
-		} else if (!screen.equals(other.screen))
-			return false;
-		return true;
+			return other.screen == null;
+		} else return screen.equals(other.screen);
 	}
 
 	/**

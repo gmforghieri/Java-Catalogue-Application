@@ -1,5 +1,19 @@
 # Java-Catalogue-Application
-Application has been made following the requirements below:
+## About the project
+Text based catalogue application written in Java utilizing OOP principles, sorting,
+multithreading and basic unit testing with JUnit. This is a practice project I've created after completing my first OOP course.
+## Project Setup with IntelliJ IDE
+1. Download and install the [Java Development Kit(JDK)]() on your computer.
+2. Download and Install [IntelliJ]() integrated development environment.
+3. Clone down or download the project as a zip from my repository.
+4. Open the project in IntelliJ and and assign the Java SDK.  
+![Sources Root](screenshots/SDK.jpg)
+5. Mark the main folder as "Sources Root"" and the test folder as "Test Sources Root"
+![Sources Root](screenshots/root.jpg)
+6. Specify the Project Compiler Output to be C:\Your Path\Java-Catalogue-Application\out
+![Sources Root](screenshots/output.jpg)
+7. Run the application by pressing the "Play" button in src/main/application.class file
+## Requirements
 - Reads in the file apple.txt
 - Output the entire catalogue to screen
 - Sort the entire catalogue according to type (so first all iPhones, then all iPads)

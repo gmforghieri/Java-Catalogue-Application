@@ -16,7 +16,7 @@ public class Ipad extends AppleProduct{
 	}
 
 	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
+	 * To string method for display
 	 */
 	public String toString() {
 		return "Apple " + getModel() + " with " + getMemory() + " of memory\n" + 

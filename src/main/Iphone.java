@@ -19,7 +19,7 @@ public class Iphone extends AppleProduct {
 	}
 
 	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
+	 * To string method definition for displaying the iphone object
 	 */
 	@Override
 	public String toString() {

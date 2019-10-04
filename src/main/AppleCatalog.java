@@ -8,9 +8,9 @@ import java.util.Scanner;
  */
 public class AppleCatalog {
 	private List<AppleProduct> catalog;
-	
+
 	/**
-	 * 
+	 * Constructor
 	 */
 	private AppleCatalog() {
 		this.catalog = new ArrayList<AppleProduct>();

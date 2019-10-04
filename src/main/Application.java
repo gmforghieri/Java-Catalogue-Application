@@ -10,7 +10,7 @@ public class Application {
 	public static void main(String[] args) {
 		Scanner inputFile = null;
 		try {
-			inputFile = new Scanner(new File("ExtendedProductList.txt"));
+			inputFile = new Scanner(new File("apple.txt"));
 		} catch (FileNotFoundException e1) {
 			e1.printStackTrace();
 		}

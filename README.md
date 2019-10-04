@@ -9,7 +9,8 @@ my first OOP course.
 3. Clone down or download the project as a zip from my repository.
 4. Open the project in IntelliJ and and assign the Java SDK. ![Sources Root](screenshots/SDK.jpg)
 5. Mark the main folder as "Sources Root"" and the test folder as "Test Sources Root". ![Sources Root](screenshots/root.jpg) 
-6. Specify the Project Compiler Output to be Your Path\Java-Catalogue-Application\out. ![Sources Root](screenshots/output.jpg)  
+6. Go to the file menu in the top left corner, select project structure from the dropdown,
+assign the Project Language Level to 11 and the Project Compiler Output to be: Drive:\Your Path\Java-Catalogue-Application\out. ![Sources Root](screenshots/output.jpg)  
 7. Run the application by pressing the "Play" button in src/main/application.class file.
 ## Requirements
 - Reads in the file apple.txt

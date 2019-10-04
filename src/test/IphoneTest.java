@@ -3,9 +3,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
-
-
-class IphoneTest {
+public class IphoneTest {
 
 	private Iphone test = new Iphone("IPHONE SE" , "4", "A9", "CDMA", "SILVER", "16GB", false, 490);
 	private Iphone test2 = new Iphone("IPHONE 7" , "4.7", "A10", "GSM", "JET BLACK", "32GB", true, 700);

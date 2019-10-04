@@ -5,7 +5,7 @@ import java.util.Scanner;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
-class AppleProductTest {
+public class AppleProductTest {
 
 	private final String model = "IPHONE SE";
 	private final String screen = "4";

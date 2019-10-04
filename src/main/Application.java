@@ -17,7 +17,8 @@ public class Application {
 		}
 		Scanner inputScanner = new Scanner(System.in);
 		int input;
-		
+
+		assert inputFile != null;
 		AppleCatalog scannedCatalog = AppleCatalog.read(inputFile);
 		
 		Worker sorter = new Worker(scannedCatalog);

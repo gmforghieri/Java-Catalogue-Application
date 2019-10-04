@@ -2,7 +2,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
-class IpadTest {
+public class IpadTest {
 
 	private Ipad test = new Ipad("IPAD AIR 2" , "9.7", "A8", true, "SILVER", "64GB",  400);
 	private Ipad test2 = new Ipad("IPAD PRO" , "9.7", "A9", true, "SPACE GREY", "32GB",  650);
